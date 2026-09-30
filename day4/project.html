@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product List</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: rgb(232, 205, 205);
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #loading {
+            text-align: center;
+        }
+
+        #error {
+            text-align: center;
+        }
+
+        #products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+          
+        } 
+
+        .card img {
+            width: 150px;
+            height: 180px;
+            object-fit: contain;
+        }
+
+        .card h2 {
+            font-size: 18px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Product List</h1>
+
+    <p id="loading">Loading products...</p>
+
+    <p id="error"></p>
+
+    <div id="products"></div>
+
+    <script src="project.js"></script>
+
+</body>
+
+</html>

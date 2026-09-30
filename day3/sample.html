@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+//     async function getproducts(){
+//         try{
+        //   let response=await fetch("https://fakestoreapi.com/products");
+// let data=await response.json();
+// console.log(data);  
+//         }catch(error){
+//             console.log("something went wrong");
+//         }
+//     }getproducts();
+
+
+fetch("https://fakestoreapi.com/products")
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    console.log(data);
+})
+.catch(function(error){
+    console.log(error);
+});
+  </script>  
+</body>
+</html>
